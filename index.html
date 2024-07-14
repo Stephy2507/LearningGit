@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitBasics </title>
+    <title>Conference Registration Form </title>
 </head>
 <body>
-    <h1>GitBasics Website</h1>
+    <h1>Registration Page   </h1>
+    <form action="#" id="RegistrationForm">  
+        	<label for="name" >NAME:*</label>
+            <input type="text" name="name" id="name" required pattern="[A-Za-z/s]" title="Text should contain only Capital and small letters and space"> 
+            <label for="password">PASSWORD:*</label>
+            <input type="text" name="password" id="password" required> 
+            <label for="dob">DATE OF BIRTH:*</label>
+            <input type="date" name="dob" id="dob" > 
+            <br>
+            <label for="gender">GENDER*:</label>
+            <br>
+            <label for=""> <input type="radio" name="gender" id="gender" value="Male"> Male </label>
+            <label for=""> <input type="radio" name="gender" id="gender" value="Female" > Female </label>
+            <label for=""> <input type="radio" name="gender" id="gender" value="Other"> Other </label>
+            <br>
+            <label for="Education">EDUCATION:</label>
+            <select name="education" id="education">
+                <option value="noselection"> Select your education level:</option>
+                <option value="10th"> 10th</option>
+                <option value="12th"> 12th</option>
+                <option value="bachelors"> Bachelors</option>
+                <option value="masters"> Masters</option>
+                <option value="phd"> Phd.</option>
+
+            </select>
+            <br>
+            <label for="YOE"><input type="number" name="yoe" id="yoe" value="yoe" min="0" max="10"> Years of Experience:</label>
+            <br>
+            <label for="uploadFile">UPLOAD FILE: <input type="file" name="uploadFile" required accept=".pdf,.docx,.xls"></label>
+            <br>
+            <button type="submit" > SUBMIT </button> 
+
+    
+    
+    
+    
+    
+    
+    </form>
+
 </body>
 </html>
